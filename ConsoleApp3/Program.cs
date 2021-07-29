@@ -50,7 +50,7 @@ namespace ConsoleApp3
             if (baseType != newType)
                 return;
 
-#warning We are using the declared only binding nflag to ignore the properties that C# adds onto things like "Lists". However this means inheritance cannot be compared
+#warning We are using the declared only binding flag to ignore the properties that C# adds onto things like "Lists". However this means inheritance cannot be compared
 
             var allProperties = baseType.GetProperties(BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly);
 
